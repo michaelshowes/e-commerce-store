@@ -10,8 +10,6 @@ export default async function HomePage() {
   const products = await getProducts({ isFeatured: true });
   const billboard = await getBillboard('0df0bd75-d43e-4b66-94a9-02bd016e1331');
 
-  console.log(billboard);
-
   return (
     <Container>
       <div className={'scroll-py-10 pb-10'}>
